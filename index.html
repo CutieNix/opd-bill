@@ -127,7 +127,7 @@ function render(){
   document.getElementById("main").innerHTML=`
     <section>
       <span class="badge">${v.type}</span>
-      <p class="total">총 수납 금액 <b>${won(total)}원</b></p>    </section>
+      <p class="total">총 수납 금액 <b>${won(due(v))}원</b></p>    </section>
     <dl class="card info">
       <dt>진료의</dt><dd>${v.doctor} 진료의</dd>
       <dt>진료과</dt><dd>${v.dept}</dd>
